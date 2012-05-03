@@ -1,0 +1,21 @@
+A B C D E F G H I J K L M N O P R S T W
+A B C D E K S O P
+B A D J C
+C A G B K O
+D B A F L
+E A F L
+F D E W S
+G C J W
+H J S L K
+I J O R P
+J H I B G L K
+K A C J H
+L D E N H J 
+M R N
+N T M L
+O I C A
+P I A
+R I M
+S H A F
+T W N
+W T G F
