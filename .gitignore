@@ -1,6 +1,13 @@
 *.class
 
+# OS generated files #
+######################
+.DS_Store*
+
 # Package Files #
-*.jar
 *.war
 *.ear
+
+# Eclipse project files
+.classpath
+.project
