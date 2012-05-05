@@ -39,21 +39,20 @@ public class SecondAlgorithm {
 		int newDimensions =  adjacencyMatrix.length * adjacencyMatrix.length + adjacencyMatrix.length;
 		System.out.println(newDimensions);
 		boolean[][] newAdjacencyMatrix = new boolean[newDimensions][newDimensions];
+		//fill new matrix with true
 		for(boolean[] row : newAdjacencyMatrix)
-			Arrays.fill(row, false);
-		
+			Arrays.fill(row, true);
+		//no loops - fill diagonal with false
 		for(int i = 0; i<newAdjacencyMatrix.length; i++){
-			for(int j =0; j<newAdjacencyMatrix[i].length; j++){
-				if(i != j){
-					newAdjacencyMatrix[i][j]=true;
-				}
-			}
+			newAdjacencyMatrix[i][i] = false;
 		}
+		//insert original matrix into the new one
 		for(int i = 0; i<adjacencyMatrix.length; i++){
 			for(int j=0; j<adjacencyMatrix[i].length; j++){
 				newAdjacencyMatrix[i][j] = adjacencyMatrix[i][j];
 			}
-		}		
+		}	
+		
 		return newAdjacencyMatrix;
 	}
 	
